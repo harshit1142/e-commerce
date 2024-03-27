@@ -10,7 +10,7 @@ export default function Card({title,price,img,describe}) {
           <div class="product-card">
           
               <button onClick={()=>setOpen(!open)} data-bs-target="#example">
-                  <img src={img} alt="Product Image" />
+                  <img src={img} alt="Product" />
                   <h5>{title}</h5>
                   <p className='text-gray'>{describe}</p>
                   <p className='price fs-1 text-success'>{price}</p>
@@ -25,7 +25,7 @@ export default function Card({title,price,img,describe}) {
                       </div>
                       <div class="modal-body">
                               <div class="product-card">
-                                  <img src={img} alt="Product Image" />
+                                  <img src={img} alt="Product" />
                                   
                                   <p>{describe}</p>
                                   <p className='price fs-1 text-success'>{price}</p>
