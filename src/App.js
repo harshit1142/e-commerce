@@ -2,12 +2,12 @@
 import './App.css';
 import Card from './Components/Card';
 import Footer from './Components/Footer';
-import Nav_Bar from './Components/Navbar';
+import NAV_BAR from './Components/Navbar';
 
 function App() {
   return (
     <div >
-      <Nav_Bar />
+      <NAV_BAR />
       <main>
         <div className='select-btn'>
           <button class="sell-btn">Sell</button>

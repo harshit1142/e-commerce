@@ -5,12 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function Nav_Bar() {
+function NAV_BAR() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary navbary text-light">
             <Container fluid className="text-light">
                 <Navbar.Brand className="text-light" href="#">  Student-Assistant</Navbar.Brand>
-                <img className='brand-logo' src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png" alt='logo'/>
+                <img className='brand-logo' src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png" alt='logo' />
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -25,9 +25,9 @@ function Nav_Bar() {
                             <NavDropdown.Item href="#action4">
                                 Edit User Details
                             </NavDropdown.Item>
-                          
+
                         </NavDropdown>
-                     
+
                     </Nav>
                     <Form className="d-flex">
                         <Form.Control
@@ -44,4 +44,4 @@ function Nav_Bar() {
     );
 }
 
-export default Nav_Bar;
+export default NAV_BAR;
