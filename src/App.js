@@ -22,6 +22,7 @@ function App() {
           <Card val="5" title={"MOTOROLA g24 Power"} price={"₹7,999"} describe={"4 GB RAM | 128 GB ROM | Expandable Upto 1 TB,16.76 cm (6.6 inch) HD+ Display,50MP + 2MP | 16MP Front Camera,6000 mAh Battery,Helio G85 Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/w/j/g24-pb1c0000in-motorola-original-imagxm3afhhxpqz9.jpeg?q=70"} />
           <Card val="6" title={"Infinix SMART 8"} price={"₹6,999"} describe={"4 GB RAM | 64 GB ROM | Expandable Upto 2 TB,16.76 cm (6.6 inch) HD+ Display,50MP + AI Lens | 8MP Front Camera,5000 mAh Battery,Helio G36 Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/v/p/-original-imagxsc4nthcs2zk.jpeg?q=70" } />
           <Card val="7" title={"SAMSUNG Galaxy F14"} price={"₹9,490"} describe={"4 GB RAM | 128 GB ROM | Expandable Upto 1 TB,16.76 cm (6.6 inch) Full HD+ Display,50MP + 2MP | 13MP Front Camera,6000 mAh Battery,Exynos 1330, Octa Core Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/c/x/-original-imagtyxdm82fsv6m.jpeg?q=70"} />
+          <Card val="8" title={"realme 12 Pro 5G"} price={"₹23,999"} describe={"8 GB RAM | 256 GB ROM | Expandable Upto 1 TB,17.02 cm (6.7 inch) Full HD+ Display,50MP + 8MP + 32MP | 16MP Front Camera,5000 mAh Battery,Snapdragon 6 Gen1, Octa Core Processor"} img={"https://image01.realme.net/general/20240129/1706507688065d53fb9eb2be3404c9ef252e989afa7aa.png?q=70"} />
         </div>
       </main>
       <Footer />
