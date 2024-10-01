@@ -27,7 +27,7 @@ function App() {
           <Card val="10" title={"boAt Airdopes 800"} price={"₹1498"} describe={"True Wireless in Ear Ear Buds w/Dolby Audio, Adaptive EQ by Mimi, 40 Hours Playback, 4 Mics w/AI-ENx™, in-Ear Detection & Hearables App Support"} img={"https://m.media-amazon.com/images/I/71cfqGWqgoL._SL1500_.jpg"} />
           <Card val="11" title={"Noise Pure Pods"} price={"₹2499"} describe={"Wireless Open Ear Earbuds with AirWave™ Technology,Up-to 80H Playtime,Quad Mic with ENC,16mm Neodymium Dynamic Driver,Detachable Pure Band,BTv5.3"} img={"https://m.media-amazon.com/images/I/61IKUYZYfrL._SL1500_.jpg"} />
           <Card val="12" title={"OnePlus Nord Buds"} price={"₹1599"} describe={"True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating "} img={"https://m.media-amazon.com/images/I/51oMWaW7tKL._SL1500_.jpg"} />
-
+          <Card val="13" title={"realme 12 Pro 5G"} price={"₹23,999"} describe={"8 GB RAM | 256 GB ROM | Expandable Upto 1 TB,17.02 cm (6.7 inch) Full HD+ Display,50MP + 8MP + 32MP | 16MP Front Camera,5000 mAh Battery,Snapdragon 6 Gen1, Octa Core Processor"} img={"https://image01.realme.net/general/20240129/1706507688065d53fb9eb2be3404c9ef252e989afa7aa.png?q=70"} />
 
 
         </div>
