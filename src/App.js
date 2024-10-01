@@ -22,6 +22,14 @@ function App() {
           <Card val="5" title={"MOTOROLA g24 Power"} price={"₹7,999"} describe={"4 GB RAM | 128 GB ROM | Expandable Upto 1 TB,16.76 cm (6.6 inch) HD+ Display,50MP + 2MP | 16MP Front Camera,6000 mAh Battery,Helio G85 Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/w/j/g24-pb1c0000in-motorola-original-imagxm3afhhxpqz9.jpeg?q=70"} />
           <Card val="6" title={"Infinix SMART 8"} price={"₹6,999"} describe={"4 GB RAM | 64 GB ROM | Expandable Upto 2 TB,16.76 cm (6.6 inch) HD+ Display,50MP + AI Lens | 8MP Front Camera,5000 mAh Battery,Helio G36 Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/v/p/-original-imagxsc4nthcs2zk.jpeg?q=70" } />
           <Card val="7" title={"SAMSUNG Galaxy F14"} price={"₹9,490"} describe={"4 GB RAM | 128 GB ROM | Expandable Upto 1 TB,16.76 cm (6.6 inch) Full HD+ Display,50MP + 2MP | 13MP Front Camera,6000 mAh Battery,Exynos 1330, Octa Core Processor"} img={"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/c/x/-original-imagtyxdm82fsv6m.jpeg?q=70"} />
+          <Card val="8" title={"HP 15s Core i5 12th Gen"} price={"₹49990"} describe={"(16GB RAM/512GB SSD/FHD/MS Office 21 /Backlit Keyboard /15.6-inch (39.6 cm)/FHD/Windows 11/Silver/1.69 kg) fy5009TU Laptop"} img={"https://m.media-amazon.com/images/I/61TIgpyjxPL._SL1000_.jpg"} />
+          <Card val="9" title={"ASUS Vivobook 14"} price={"₹30990"} describe={"8 GB RAM/512GB SSD/Win11/Office 2021/Fingerprint/42WHr /Blue/1.40 kg"} img={"https://m.media-amazon.com/images/I/61BcVnCTClL._SL1500_.jpg"} />
+          <Card val="10" title={"boAt Airdopes 800"} price={"₹1498"} describe={"True Wireless in Ear Ear Buds w/Dolby Audio, Adaptive EQ by Mimi, 40 Hours Playback, 4 Mics w/AI-ENx™, in-Ear Detection & Hearables App Support"} img={"https://m.media-amazon.com/images/I/71cfqGWqgoL._SL1500_.jpg"} />
+          <Card val="11" title={"Noise Pure Pods"} price={"₹2499"} describe={"Wireless Open Ear Earbuds with AirWave™ Technology,Up-to 80H Playtime,Quad Mic with ENC,16mm Neodymium Dynamic Driver,Detachable Pure Band,BTv5.3"} img={"https://m.media-amazon.com/images/I/61IKUYZYfrL._SL1500_.jpg"} />
+          <Card val="12" title={"OnePlus Nord Buds"} price={"₹1599"} describe={"True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating "} img={"https://m.media-amazon.com/images/I/51oMWaW7tKL._SL1500_.jpg"} />
+
+
+
         </div>
       </main>
       <Footer />
