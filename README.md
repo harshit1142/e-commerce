@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://create-react-app.d
 This is a fully functional e-commerce platform built using [React](https://reactjs.org/). It includes features such as product listings, shopping cart, user authentication, and order management. The project aims to provide a seamless shopping experience for users and a robust management system for administrators.
 
 ## Project Link
-[Link](https://harshit-ecommerce.netlify.app)
+[Link](https://e-commerce-phi-plum-22.vercel.app/)
 
 ## Table of Contents
 
