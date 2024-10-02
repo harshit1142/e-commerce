@@ -1,4 +1,22 @@
 {
   "projectName": "e-commerce",
-  "projectOwner": "harshit1142"
+  "projectOwner": "harshit1142",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "VedantDewangan",
+      "name": "VedantDewangan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/135214899?v=4",
+      "profile": "https://github.com/VedantDewangan",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    }
+  ]
 }
