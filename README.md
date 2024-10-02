@@ -88,6 +88,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/VedantDewangan"><img src="https://avatars.githubusercontent.com/u/135214899?v=4?s=100" width="100px;" alt="VedantDewangan"/><br /><sub><b>VedantDewangan</b></sub></a><br /><a href="#design-VedantDewangan" title="Design">🎨</a> <a href="#code-VedantDewangan" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/harshit1142"><img src="https://avatars.githubusercontent.com/u/112557145?v=4?s=100" width="100px;" alt="Harshit Pandey"/><br /><sub><b>Harshit Pandey</b></sub></a><br /><a href="#design-harshit1142" title="Design">🎨</a> <a href="#code-harshit1142" title="Code">💻</a> <a href="#bug-harshit1142" title="Bug reports">🐛</a> <a href="#content-harshit1142" title="Content">🖋</a> <a href="#data-harshit1142" title="Data">🔣</a> <a href="#projectManagement-harshit1142" title="Project Management">📆</a> <a href="#review-harshit1142" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
