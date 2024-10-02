@@ -79,10 +79,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Bootstrap](https://getbootstrap.com/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 
-## Contributors 
+## Contributors
 
-<p align="center">
-  <a href="https://github.com/harshit1142/e-commerce/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=harshit1142/e-commerce" max={1000} columns={100} anon={1}/>
-  </a>
-</p>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
