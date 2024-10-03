@@ -19,9 +19,4 @@ contributors = [
 		fullname: 'Anirudh',
 		username: 'https://github.com/anirudh-why',
 	},
-	{
-		id: 5,
-		fullname: 'Aiushi Sengupta',
-		username: 'https://github.com/Aiu26',
-	},
 ];
