@@ -1,75 +1,95 @@
-{
-	"projectName": "e-commerce",
-	"projectOwner": "harshit1142",
-	"files": [
-		"README.md"
-	],
-	"commitType": "docs",
-	"commitConvention": "angular",
-	"contributorsPerLine": 7,
-	"contributors": [
-		{
-			"login": "VedantDewangan",
-			"name": "VedantDewangan",
-			"avatar_url": "https://avatars.githubusercontent.com/u/135214899?v=4",
-			"profile": "https://github.com/VedantDewangan",
-			"contributions": [
-				"design",
-				"code"
-			]
-		},
-		{
-			"login": "harshit1142",
-			"name": "Harshit Pandey",
-			"avatar_url": "https://avatars.githubusercontent.com/u/112557145?v=4",
-			"profile": "https://github.com/harshit1142",
-			"contributions": [
-				"design",
-				"code",
-				"bug",
-				"content",
-				"data",
-				"projectManagement",
-				"review"
-			]
-		},
-		{
-			"login": "HackesticMedusa",
-			"name": "Ankur Karmakar",
-			"avatar_url": "https://avatars.githubusercontent.com/u/107264491?v=4",
-			"profile": "https://github.com/HackesticMedusa",
-			"contributions": [
-				"code",
-				"content",
-				"maintenance"
-			]
-		},
-		{
-			"login": "hemanthhhhhh",
-			"name": "hemanthhhhhh",
-			"avatar_url": "https://avatars.githubusercontent.com/u/98905333?v=4",
-			"profile": "https://github.com/hemanthhhhhh",
-			"contributions": [
-				"content"
-			]
-		},
-		{
-			"login": "anirudh-why",
-			"name": "Anirudh",
-			"avatar_url": "https://avatars.githubusercontent.com/u/133368541?v=4",
-			"profile": "https://github.com/anirudh-why",
-			"contributions": [
-				"data"
-			]
-		},
-		{
-			"login": "itSarthak",
-			"name": "Sarthak Tyagi",
-			"avatar_url": "https://avatars.githubusercontent.com/u/113413415?v=4",
-			"profile": "https://github.com/itSarthak",
-			"contributions": [
-				"bug"
-			]
-		}
-	]
+
+  "projectName": "e-commerce",
+  "projectOwner": "harshit1142",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "VedantDewangan",
+      "name": "VedantDewangan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/135214899?v=4",
+      "profile": "https://github.com/VedantDewangan",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "harshit1142",
+      "name": "Harshit Pandey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/112557145?v=4",
+      "profile": "https://github.com/harshit1142",
+      "contributions": [
+        "design",
+        "code",
+        "bug",
+        "content",
+        "data",
+        "projectManagement",
+        "review"
+      ]
+    },
+    {
+      "login": "HackesticMedusa",
+      "name": "Ankur Karmakar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107264491?v=4",
+      "profile": "https://github.com/HackesticMedusa",
+      "contributions": [
+        "code",
+        "content",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "hemanthhhhhh",
+      "name": "hemanthhhhhh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98905333?v=4",
+      "profile": "https://github.com/hemanthhhhhh",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "anirudh-why",
+      "name": "Anirudh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/133368541?v=4",
+      "profile": "https://github.com/anirudh-why",
+      "contributions": [
+        "data"
+      ]
+    },
+    {
+      "login": "itSarthak",
+      "name": "Sarthak Tyagi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113413415?v=4",
+      "profile": "https://github.com/itSarthak",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "Prathamesh0901",
+      "name": "Prathamesh Mane",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134224065?v=4",
+      "profile": "https://github.com/Prathamesh0901",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "Sarvadnyaawaghad150503",
+      "name": "Sarvadnya Awaghad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111975266?v=4",
+      "profile": "https://github.com/Sarvadnyaawaghad150503",
+      "contributions": [
+        "code",
+        "ideas",
+        "data"
+      ]
+    }
+  ]
 }
