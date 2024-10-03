@@ -93,6 +93,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/hemanthhhhhh"><img src="https://avatars.githubusercontent.com/u/98905333?v=4?s=100" width="100px;" alt="hemanthhhhhh"/><br /><sub><b>hemanthhhhhh</b></sub></a><br /><a href="#content-hemanthhhhhh" title="Content">🖋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/anirudh-why"><img src="https://avatars.githubusercontent.com/u/133368541?v=4?s=100" width="100px;" alt="Anirudh"/><br /><sub><b>Anirudh</b></sub></a><br /><a href="#data-anirudh-why" title="Data">🔣</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/itSarthak"><img src="https://avatars.githubusercontent.com/u/113413415?v=4?s=100" width="100px;" alt="Sarthak Tyagi"/><br /><sub><b>Sarthak Tyagi</b></sub></a><br /><a href="#bug-itSarthak" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Prathamesh0901"><img src="https://avatars.githubusercontent.com/u/134224065?v=4?s=100" width="100px;" alt="Prathamesh Mane"/><br /><sub><b>Prathamesh Mane</b></sub></a><br /><a href="#design-Prathamesh0901" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>
