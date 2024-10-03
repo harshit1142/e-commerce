@@ -10,11 +10,15 @@ export default function Card({ title, price, img, describe }) {
   return (
     <>
       <div className="product-card">
-        <button onClick={handleModalToggle} data-bs-target={`#modal-${title}`}>
-          <img src={img} alt="Product" />
-          <h5>{title}</h5>
-          <p className="text-gray">{describe}</p>
-          <p className="price fs-1 text-success">{price}</p>
+        <button onClick={handleModalToggle} data-bs-target={`#modal-${title}`} className='flex flex-column'>
+          <div className="image">
+            <img src={img} alt="Product" />
+          </div>
+          <div className="info">
+            <h5 className='mt-2'>{title}</h5>
+            <p className='text-gray'>{describe}</p>
+            <p className='price fs-1 text-success'>{price}</p>
+          </div>
         </button>
         <button className="add-to-wishlist btn btn-danger">Add to Wishlist</button>
 
