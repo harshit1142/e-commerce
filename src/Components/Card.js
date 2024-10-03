@@ -1,49 +1,55 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../App.css';
+export default function Card({ title, price, img, describe }) {
+  const [open, setOpen] = useState(false);
 
-export default function Card({title,price,img,describe}) {
+  const handleModalToggle = () => {
+    setOpen(!open);
+  };
 
-    const [open,setOpen]=useState(false);
- 
-  
   return (
     <>
-          <div class="product-card">
-          
-              <button onClick={()=>setOpen(!open)} data-bs-target="#example">
-                  <img src={img} alt="Product" />
-                  <h5>{title}</h5>
-                  <p className='text-gray'>{describe}</p>
-                  <p className='price fs-1 text-success'>{price}</p>
-              </button>
-              <button class="add-to-wishlist btn btn-danger">Add to Wishlist</button>
-              <div class={open ? "modal fade show" : "modal fade"} id="example" style={open?{display:"block"}:{display:"none"}} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h6>{title}</h6>
-                          <button type="button" onClick={()=>setOpen(!open)} class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                              <div class="product-card">
-                                  <img src={img} alt="Product" />
-                                  
-                                  <p>{describe}</p>
-                                  <p className='price fs-1 text-success'>{price}</p>
-                              </div>
-                      </div>
-                      <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to Wishlist</button>
-                          <button type="button" class="btn btn-primary">Chat with Seller</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-        
-         
+      <div className="product-card">
+        <button onClick={handleModalToggle} data-bs-target={`#modal-${title}`}>
+          <img src={img} alt="Product" />
+          <h5>{title}</h5>
+          <p className="text-gray">{describe}</p>
+          <p className="price fs-1 text-success">{price}</p>
+        </button>
+        <button className="add-to-wishlist btn btn-danger">Add to Wishlist</button>
 
-         
-          
+        {/* Modal */}
+        <div className={open ? "modal fade show" : "modal fade"} 
+             id={`modal-${title}`} 
+             style={open ? { display: "block" } : { display: "none" }} 
+             tabIndex="-1" 
+             aria-labelledby="exampleModalLabel" 
+             aria-hidden="true">
+          <div className="modal-dialog modal-lg">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h6 className="modal-title">{title}</h6>
+                <button 
+                  type="button" 
+                  onClick={handleModalToggle} 
+                  className="btn-close" 
+                  data-bs-dismiss="modal" 
+                  aria-label="Close">
+                </button>
+              </div>
+              <div className="modal-body text-center  dir">
+                <img src={img} alt="Product" className="modal-product-image" />
+                <p className="product-description">{describe}</p>
+                <p className="price fs-1 text-success">{price}</p>
+              </div>
+              <div className="modal-footer d-flex justify-content-between">
+                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Add to Wishlist</button>
+                <button type="button" className="btn btn-primary">Chat with Seller</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }

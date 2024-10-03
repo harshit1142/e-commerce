@@ -197,3 +197,47 @@ button {
     flex-direction: column;
   }
 }
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.dir{
+  display: flex;
+  flex-direction: column;
+}
