@@ -19,4 +19,9 @@ contributors = [
 		fullname: 'Anirudh',
 		username: 'https://github.com/anirudh-why',
 	},
+	{
+		id: 5,
+		fullname: 'Dead Shadow',
+		username: 'https://github.com/dead-shadow-7',
+	}
 ];
