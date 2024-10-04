@@ -7,7 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch, FaHome, FaInfoCircle, FaEnvelope, FaShoppingCart } from "react-icons/fa";
 
-function NAV_BAR() {
+function NAV_BAR({ setQuery }) {
+  const handleSearch = (event) => {
+    setQuery(event.target.value);
+  };
   return (
     <Navbar
       expand="lg"
@@ -92,6 +95,19 @@ function NAV_BAR() {
                 <FaSignOutAlt className="me-1" /> Sign Out
               </Button>
             </div>
+            <Form className="d-flex ms-3">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2"
+                aria-label="Search"
+                style={{ width: "200px" }}
+                onChange={handleSearch}
+              />
+              <Button variant="outline-success">
+                <FaSearch />
+              </Button>
+            </Form>
           </div>
         </Navbar.Collapse>
       </Container>
