@@ -14,6 +14,8 @@ import { FaUser,
   FaEnvelope,
   FaShoppingCart,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 function NAV_BAR({setQuery}) {
   
@@ -46,9 +48,14 @@ function NAV_BAR({setQuery}) {
             <Nav.Link href="#home" className="nav-link text-white">
               <FaHome className="me-1" /> Home
             </Nav.Link>
-            <Nav.Link href="#about" className="nav-link text-white">
-              <FaInfoCircle className="me-1" /> About Us
+            <Link to="/about">
+            <Nav.Link href="/about" className="nav-link text-white">
+              <FaInfoCircle className="me-1" /> 
+              
+              About Us
+              
             </Nav.Link>
+            </Link>
             <Nav.Link href="#contact" className="nav-link text-white">
               <FaEnvelope className="me-1" /> Contact
             </Nav.Link>
