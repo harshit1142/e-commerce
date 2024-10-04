@@ -102,7 +102,7 @@
     "title": "Xiaomi 14 CIVI",
     "price": "₹40,999",
     "describe": "8 GB RAM | 256 GB ROM | Non-Expandable,16.64 cm (6.55 inch) Full HD+ Display,50MP + 50MP + 12MP | 32MP Front Camera,4700 mAh Battery,Snapdragon® 8s Gen 3, Octa Core Processor",
-    "img": "https://i03.appmifile.com/827_operator_in/14/12/xiaomi_14_civi_image.png?q=70"
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1718891314/Croma%20Assets/Communication/Mobiles/Images/307337_0_v9m8un.png?tr=w-640"
   },
   {
     "id": 16,
@@ -110,5 +110,12 @@
     "price": "₹1,31,999",
     "describe": "12 GB RAM | 512 GB Storage | CPU Speed 3.39GHz, 3.1GHz, 2.9GHz, 2.2GHz | Size 17.25 cm full rectangle main display Dynamic AMOLED 2X |Rear Camera - 200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP | Front Camera - 12.0 MP",
     "img": "https://rukminim2.flixcart.com/image/850/1250/xif0q/mobile/5/i/7/-original-imahfu766ybd5h4z.jpeg?q=20&crop=false"
+  },
+  {
+    "id": 17,
+    "title": "Apple iphone 16 ",
+    "price": "₹79900",
+    "describe": "128 GB ROM,15.49 cm (6.1 inch) Super Retina XDR Display | 48MP Fusion 12MP Ultra Wide | 12MP Front Camera,A18 Bionic Chip, 6-Core GPU and 5-Core CPU Processor | Camera Control",
+    "img": "https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/geo/Apple-iPhone-16-hero-geo-240909_inline.jpg.large.jpg"
   }
 ]
