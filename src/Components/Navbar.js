@@ -1,18 +1,31 @@
-import React from 'react';
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch, FaHome, FaInfoCircle, FaEnvelope, FaShoppingCart } from "react-icons/fa";
+import { FaUser,
+  FaSignInAlt,
+  FaSignOutAlt,
+  FaSearch,
+  FaHome,
+  FaInfoCircle,
+  FaEnvelope,
+  FaShoppingCart,
+} from "react-icons/fa";
 
-function NAV_BAR() {
+function NAV_BAR({setQuery}) {
+  
+  const handleSearch = (event) => {
+    setQuery(event.target.value);
+  };
+
   return (
     <Navbar
       expand="lg"
       className="bg-body-tertiary text-light sticky-top shadow"
-      style={{ background: 'linear-gradient(to right, #4e54c8, #8f94fb)' }}
+      style={{ background: "linear-gradient(to right, #4e54c8, #8f94fb)" }}
     >
       <Container
         fluid
@@ -48,12 +61,17 @@ function NAV_BAR() {
                 className="me-2"
                 aria-label="Search"
                 style={{ width: "200px", borderRadius: "20px" }}
+                onChange={handleSearch}
               />
               <Button variant="light" style={{ borderRadius: "20px" }}>
                 <FaSearch />
               </Button>
             </Form>
-            <Button variant="light" className="me-2" style={{ borderRadius: "50%" }}>
+            <Button
+              variant="light"
+              className="me-2"
+              style={{ borderRadius: "50%" }}
+            >
               <FaShoppingCart />
             </Button>
             <NavDropdown
