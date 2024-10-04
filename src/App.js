@@ -1,5 +1,5 @@
 import './App.css';
-import Card from './Components/Card';
+import Card from './Components/CardCom';
 import Footer from './Components/Footer';
 import NAV_BAR from './Components/Navbar';
 import products from './data/products.json'; // Importing the JSON file
