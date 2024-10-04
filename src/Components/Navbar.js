@@ -6,7 +6,10 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch } from "react-icons/fa";
 
-function NAV_BAR() {
+function NAV_BAR({ setQuery }) {
+  const handleSearch = (event) => {
+    setQuery(event.target.value);
+  };
   return (
     <Navbar
       expand="lg"
@@ -77,6 +80,7 @@ function NAV_BAR() {
                 className="me-2"
                 aria-label="Search"
                 style={{ width: "200px" }}
+                onChange={handleSearch}
               />
               <Button variant="outline-success">
                 <FaSearch />
