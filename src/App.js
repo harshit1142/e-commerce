@@ -8,6 +8,7 @@ import Signup from "./Components/signup";
 import products from "./data/products.json"; // Importing the JSON file
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutUs from "./Components/AboutUs";
+import ContactUs from "./Components/ContactUs";
 import Main from "./Components/Main";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/contact" element={<ContactUs />} />
       {/* Signup page route */}
       <Route path="/signup" element={<Signup />} />
       </Routes>

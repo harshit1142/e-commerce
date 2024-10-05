@@ -42,7 +42,7 @@ function NAV_BAR({ setQuery }) {
             <Nav.Link as={Link} to="/about" className="nav-link text-white">
               <FaInfoCircle className="me-1" /> About Us
             </Nav.Link>
-            <Nav.Link href="#contact" className="nav-link text-white">
+            <Nav.Link as={Link} to="/contact" className="nav-link text-white">
               <FaEnvelope className="me-1" /> Contact
             </Nav.Link>
           </Nav>

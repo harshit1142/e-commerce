@@ -1,0 +1,94 @@
+/* About Us Page */
+
+.about-us-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h1, h2 {
+    font-family: 'Arial', sans-serif; /* Custom font for headings */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+}
+
+.list-group-item {
+    background-color: #ffffff; /* White background for list items */
+    border: 1px solid #dee2e6; /* Border for better visibility */
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+
+
+
+/* Contact Us Page */
+
+.contact-us-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+  }
+  
+  .contact-form-wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4e54c8;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  form .form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.3);
+  }
+  
+  .contact-submit-btn {
+    background-color: #4e54c8;
+    border: none;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-submit-btn:hover {
+    background-color: #8f94fb;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
+  }
+  
+  .contact-submit-btn:active {
+    background-color: #4e54c8;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-wrapper {
+      padding: 1.5rem;
+    }
+  }
+  
