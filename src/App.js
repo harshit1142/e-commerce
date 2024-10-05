@@ -17,9 +17,15 @@ function App() {
     <div>
       <NAV_BAR setQuery={setQuery} />
       <main>
-        <div className="select-btn">
-          <button className="sell-btn">Sell</button>
-          <button className="wishlist-btn">Wishlist</button>
+        <div
+          className="select-btn"
+          style={{
+            display: "flex",
+            gap: "12px",
+          }}
+        >
+          <button className="custom-button">Sell</button>
+          <button className="custom-button">Wishlist</button>
         </div>
         <div className="product-cards">
           {filteredProducts.map((product) => (
