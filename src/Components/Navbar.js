@@ -45,7 +45,7 @@ function NAV_BAR({setQuery}) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto d-flex align-items-center">
-            <Nav.Link href="#home" className="nav-link text-white">
+            <Nav.Link href="/" className="nav-link text-white">
               <FaHome className="me-1" /> Home
             </Nav.Link>
             <Link to="/about">
