@@ -3,6 +3,8 @@ import "./App.css";
 // import Card from "./Components/CardCom";
 import Footer from "./Components/Footer";
 import NAV_BAR from "./Components/Navbar";
+import Signup from "./Components/signup";
+
 import products from "./data/products.json"; // Importing the JSON file
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutUs from "./Components/AboutUs";
@@ -42,7 +44,10 @@ function App() {
       </main> */}
       <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
       <Route path="/about" element={<AboutUs />} />
+      {/* Signup page route */}
+      <Route path="/signup" element={<Signup />} />
       </Routes>
+      
       <Footer />
     </div>
     </Router>

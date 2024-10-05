@@ -1,0 +1,27 @@
+/* Style for the signup form container */
+.signup-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the signup button */
+  .signup-button {
+    background-color: #4e54c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover effect for the signup button */
+  .signup-button:hover {
+    background-color: #8f94fb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
