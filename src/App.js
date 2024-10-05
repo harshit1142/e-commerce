@@ -22,7 +22,6 @@ function App() {
     <Router>
     <div>
       <NAV_BAR setQuery={setQuery} />
-      
       <Routes>
       <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
       <Route path="/about" element={<AboutUs />} />
