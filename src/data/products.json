@@ -131,5 +131,12 @@
     "price": "₹17999",
     "describe": "4i 20000mAh 33W Super Fast Charging PD | Power Delivery | QC 3.0|Type C Input & Output |Triple Output Ports|Classic Black|Supports Android,Apple, Tablets, Earbuds, Watches etc (MI)",
     "img": "https://m.media-amazon.com/images/I/51c5j0aJtYL._SX679_.jpg"
+  },
+  {
+    "id":20,
+    "title":"Mac Book Pro",
+    "price":"₹169900",
+    "describe":"8GB unified memory | 512GB SSD storage | 35.97 cm (14.2) Liquid Retina XDR display²| 70W USB-C Power Adapter",
+    "img":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-14-spacegray-cto-hero-202310?wid=772&hei=466&fmt=jpeg&qlt=90&.v=1697913381764"
   }
 ]
