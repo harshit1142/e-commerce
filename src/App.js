@@ -1,9 +1,14 @@
 import { useState } from "react";
 import "./App.css";
-import Card from "./Components/CardCom";
+// import Card from "./Components/CardCom";
 import Footer from "./Components/Footer";
 import NAV_BAR from "./Components/Navbar";
+import Signup from "./Components/signup";
+
 import products from "./data/products.json"; // Importing the JSON file
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AboutUs from "./Components/AboutUs";
+import Main from "./Components/Main";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -14,34 +19,19 @@ function App() {
   );
 
   return (
+    <Router>
     <div>
       <NAV_BAR setQuery={setQuery} />
-      <main>
-        <div
-          className="select-btn"
-          style={{
-            display: "flex",
-            gap: "12px",
-          }}
-        >
-          <button className="custom-button">Sell</button>
-          <button className="custom-button">Wishlist</button>
-        </div>
-        <div className="product-cards">
-          {filteredProducts.map((product) => (
-            <Card
-              key={product.val}
-              val={product.val}
-              title={product.title}
-              price={product.price}
-              describe={product.describe}
-              img={product.img}
-            />
-          ))}
-        </div>
-      </main>
+      <Routes>
+      <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
+      <Route path="/about" element={<AboutUs />} />
+      {/* Signup page route */}
+      <Route path="/signup" element={<Signup />} />
+      </Routes>
+      
       <Footer />
     </div>
+    </Router>
   );
 }
 

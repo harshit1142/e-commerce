@@ -1,0 +1,24 @@
+.about-us-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h1, h2 {
+    font-family: 'Arial', sans-serif; /* Custom font for headings */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+}
+
+.list-group-item {
+    background-color: #ffffff; /* White background for list items */
+    border: 1px solid #dee2e6; /* Border for better visibility */
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef; /* Slightly darker on hover */
+}

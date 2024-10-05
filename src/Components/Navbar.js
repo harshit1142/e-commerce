@@ -5,17 +5,10 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaUser,
-  FaSignInAlt,
-  FaSignOutAlt,
-  FaSearch,
-  FaHome,
-  FaInfoCircle,
-  FaEnvelope,
-  FaShoppingCart,
-} from "react-icons/fa";
+import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch, FaHome, FaInfoCircle, FaEnvelope, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-function NAV_BAR({setQuery}) {
+function NAV_BAR({ setQuery }) {
   
   const handleSearch = (event) => {
     setQuery(event.target.value);
@@ -31,7 +24,7 @@ function NAV_BAR({setQuery}) {
         fluid
         className="d-flex justify-content-between align-items-center"
       >
-        <Navbar.Brand href="#" className="d-flex align-items-center">
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
             src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png"
             alt="logo"
@@ -43,10 +36,10 @@ function NAV_BAR({setQuery}) {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto d-flex align-items-center">
-            <Nav.Link href="#home" className="nav-link text-white">
+            <Nav.Link as={Link} to="/" className="nav-link text-white">
               <FaHome className="me-1" /> Home
             </Nav.Link>
-            <Nav.Link href="#about" className="nav-link text-white">
+            <Nav.Link as={Link} to="/about" className="nav-link text-white">
               <FaInfoCircle className="me-1" /> About Us
             </Nav.Link>
             <Nav.Link href="#contact" className="nav-link text-white">
@@ -95,7 +88,8 @@ function NAV_BAR({setQuery}) {
                 variant="outline-light"
                 className="me-2 sign-button"
                 title="Sign In"
-                href="#signIn"
+                as={Link} // Use Link for client-side navigation
+                to="/signup" // Navigate to the signup page
                 style={{ borderRadius: "20px" }}
               >
                 <FaSignInAlt className="me-1" /> Sign In
