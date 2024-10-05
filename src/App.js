@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./App.css";
-import Card from "./Components/CardCom";
+// import Card from "./Components/CardCom";
 import Footer from "./Components/Footer";
 import NAV_BAR from "./Components/Navbar";
 import products from "./data/products.json"; // Importing the JSON file
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AboutUs from "./Components/AboutUs";
+import Main from "./Components/Main";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -14,9 +17,12 @@ function App() {
   );
 
   return (
+    <Router>
     <div>
       <NAV_BAR setQuery={setQuery} />
-      <main>
+      
+      <Routes>
+      {/* <main>
         <div className="select-btn">
           <button className="sell-btn">Sell</button>
           <button className="wishlist-btn">Wishlist</button>
@@ -33,9 +39,13 @@ function App() {
             />
           ))}
         </div>
-      </main>
+      </main> */}
+      <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
+      <Route path="/about" element={<AboutUs />} />
+      </Routes>
       <Footer />
     </div>
+    </Router>
   );
 }
 
