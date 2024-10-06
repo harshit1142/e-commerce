@@ -153,5 +153,19 @@
     "price":"₹32,999",
     "describe":"Powerful sensors, Advanced health features,With Call Function,Touchscreen,Fitness & Outdoor,Battery Runtime: Upto 18 hrs",
     "img":"https://rukminim2.flixcart.com/image/850/1000/xif0q/smartwatch/v/y/1/-original-imagte78yvzaqvuk.jpeg?q=90&crop=false"
+  },
+  { 
+    "id":23,
+    "title":"Dell Inspiron 7441 Plus Laptop ",
+    "price":"₹1,05,490",
+    "describe":"Built-in AI Snapdragon X Plus X1P-64-100 | 16GB LPDDR5X | 512GB SSD | Qualcomm GPU | 14inch(35.56cm) 16:10 QHD+ (2560x1600) Touch 400 nits | Backlit KB + FPR | Ice Blue | 1.4 kg",
+    "img":"https://m.media-amazon.com/images/I/71mBe9xEEdL._SX679_.jpg"
+  },
+  { 
+    "id":24,
+    "title":"Nothing Phone (2a)  ",
+    "price":"₹23,899",
+    "describe":"8GB RAM, 256GB Storage | 6.7inch AMOLED Display | 50MP (OIS) + 50 MP | 32 MP Front | Mediatek Dimensity 7200 Pro Processor | Glyph Interface | 45 W Charging 100% in 59 mins",
+    "img":"https://m.media-amazon.com/images/I/4172-I2V+AL._SY879_.jpg"
   }
 ]
