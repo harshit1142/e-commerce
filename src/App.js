@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./Components/Footer";
 import NAV_BAR from "./Components/Navbar";
 import Signup from "./Components/signup";
+import ContactUs from "./Components/ContactUs"; // Import the new ContactUs page
 
 import products from "./data/products.json"; // Importing the JSON file
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -27,6 +28,11 @@ function App() {
       <Route path="/about" element={<AboutUs />} />
       {/* Signup page route */}
       <Route path="/signup" element={<Signup />} />
+      
+        {/* other routes */}
+        <Route path="/contact" element={<ContactUs />} />
+        {/* other routes */}
+      
       </Routes>
       
       <Footer />

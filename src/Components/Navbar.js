@@ -9,7 +9,7 @@ import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch, FaHome, FaInfoCircle, FaEn
 import { Link } from "react-router-dom";
 
 function NAV_BAR({ setQuery }) {
-  
+
   const handleSearch = (event) => {
     setQuery(event.target.value);
   };
@@ -42,7 +42,7 @@ function NAV_BAR({ setQuery }) {
             <Nav.Link as={Link} to="/about" className="nav-link text-white">
               <FaInfoCircle className="me-1" /> About Us
             </Nav.Link>
-            <Nav.Link href="#contact" className="nav-link text-white">
+            <Nav.Link as={Link} to="/contact" className="nav-link text-white">
               <FaEnvelope className="me-1" /> Contact
             </Nav.Link>
           </Nav>
@@ -72,14 +72,14 @@ function NAV_BAR({ setQuery }) {
               id="navbarScrollingDropdown"
               className="me-3"
             >
-              <NavDropdown.Item href="#editProduct">
+              <NavDropdown.Item as={Link} to="#editProduct">
                 <FaShoppingCart className="me-2" /> Edit Product
               </NavDropdown.Item>
-              <NavDropdown.Item href="#editUserDetails">
+              <NavDropdown.Item as={Link} to="#editUserDetails">
                 <FaUser className="me-2" /> Edit User Details
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#settings">
+              <NavDropdown.Item as={Link} to="#settings">
                 <FaInfoCircle className="me-2" /> Settings
               </NavDropdown.Item>
             </NavDropdown>
@@ -98,7 +98,8 @@ function NAV_BAR({ setQuery }) {
                 variant="light"
                 className="sign-button"
                 title="Sign Out"
-                href="#logout"
+                as={Link} // Changed to Link for client-side navigation
+                to="/logout" // Navigate to the logout functionality (assuming it exists)
                 style={{ borderRadius: "20px" }}
               >
                 <FaSignOutAlt className="me-1" /> Sign Out
