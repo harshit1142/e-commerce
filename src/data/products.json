@@ -138,6 +138,12 @@
     "price": "₹9999",
     "describe": "Wireless Earbuds with Active Noise Cancellation | 22 hours of battery life | IPX7 Water Resistance | Bluetooth 5.0 | Compatible with Android and iOS devices.",
     "img": "https://m.media-amazon.com/images/I/61YP3nZAptL._AC_UY327_FMwebp_QL65_.jpg"
-  }
-  
+  },
+  {
+    "id":21,
+    "title":"Mac Book Pro",
+    "price":"₹169900",
+    "describe":"8GB unified memory | 512GB SSD storage | 35.97 cm (14.2) Liquid Retina XDR display²| 70W USB-C Power Adapter",
+    "img":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-14-spacegray-cto-hero-202310?wid=772&hei=466&fmt=jpeg&qlt=90&.v=1697913381764"
+  },
 ]
