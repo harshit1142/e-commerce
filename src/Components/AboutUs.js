@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './AboutUs.css'; // Assuming you create a CSS file for custom styles
+import './Style.css';
 
 const AboutUs = () => {
     return (
