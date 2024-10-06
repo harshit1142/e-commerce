@@ -8,6 +8,13 @@ const Main = ({ filteredProducts, setQuery }) => {
         <button className="sell-btn">Sell</button>
         <button className="wishlist-btn">Wishlist</button>
       </div>
+      <select class="form-select">
+        <option selected>Sort By</option>
+        <option value="1">Featured</option>
+        <option value="2">Rating</option>
+        <option value="3">Price: Low to High</option>
+        <option value="4">Price: High to Low</option>
+      </select>
       <div className="product-cards">
         {filteredProducts.map((product) => (
           <Card
