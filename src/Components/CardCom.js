@@ -43,11 +43,23 @@ export default function ProductCard({ title, price, img, describe }) {
               borderTopRightRadius: "15px",
             }}
           />
-          <CardContent>
+          <CardContent sx={{height: "200px"}}>
             <Typography gutterBottom variant="h5" component="div">
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{
+                height: "80px",
+                overflow: "hidden",
+                mb: 1, 
+                textOverflow: "ellipsis", 
+                display: "-webkit-box", 
+                WebkitLineClamp: 4, // Limit to 4 lines of text
+                WebkitBoxOrient: "vertical", 
+              }}
+            >
               {describe}
             </Typography>
             <Typography variant="h6" color="success.main">
