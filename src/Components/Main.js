@@ -1,9 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import Card from './CardCom';  // Adjust the import path if necessary
+import { useNavigate } from 'react-router-dom';
+import Card from './CardCom';
 
 const Main = ({ filteredProducts, setQuery }) => {
   const [sortType, setSortType] = useState(''); 
   const [sortedProducts, setSortedProducts] = useState([...filteredProducts]);
+  const [wishList, setWishList] = useState([]);
+
+  const navigate = useNavigate();
+
+  // Load wishlist from localStorage when the component mounts
+  useEffect(() => {
+    const storedWishlist = localStorage.getItem('wishlist');
+    if (storedWishlist) {
+      setWishList(JSON.parse(storedWishlist)); 
+    }
+  }, []); 
+
+  // Toggle add/remove product from wishlist
+  const handleWishList = (product) => {
+    const isPresent = wishList.some(item => item.id === product.id);
+
+    if (isPresent) {
+      const newList = wishList.filter(item => item.id !== product.id);
+      setWishList(newList);
+      localStorage.setItem('wishlist', JSON.stringify(newList));
+    } else {
+      const newList = [...wishList, product];
+      setWishList(newList);
+      localStorage.setItem('wishlist', JSON.stringify(newList));
+    }
+  };
 
   const parsePrice = (priceStr) => {
     return Number(priceStr.replace(/[^0-9.-]+/g, ''));
@@ -23,8 +50,14 @@ const Main = ({ filteredProducts, setQuery }) => {
         sortedArray = [...filteredProducts];
     }
 
-    setSortedProducts(sortedArray);
-  }, [sortType, filteredProducts]); 
+    // Add `isInWishlist` to each product
+    const updatedArray = sortedArray.map((product) => ({
+      ...product,
+      isInWishlist: wishList.some(item => item.id === product.id)  // Check if in wishlist
+    }));
+
+    setSortedProducts(updatedArray);
+  }, [wishList, sortType, filteredProducts]);  // Re-run when wishlist, sortType, or filteredProducts change
 
   const handleSortChange = (e) => {
     const value = e.target.value;
@@ -44,7 +77,7 @@ const Main = ({ filteredProducts, setQuery }) => {
     <main>
       <div className="select-btn">
         <button className="sell-btn">Sell</button>
-        <button className="wishlist-btn">Wishlist</button>
+        <button className="wishlist-btn" onClick={() => {navigate('/wishlist')}}>Wishlist</button>
       </div>
       <div className='select-btn'>
         <select 
@@ -62,10 +95,13 @@ const Main = ({ filteredProducts, setQuery }) => {
           <Card
             key={product.val}
             val={product.val}
+            id={product.id}
             title={product.title}
             price={product.price}
             describe={product.describe}
             img={product.img}
+            isInWishList={product.isInWishlist}
+            handleWishList={() => handleWishList(product)}
           />
         ))}
       </div>
