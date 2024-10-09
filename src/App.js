@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Main from "./Components/Main";
+import WishList from "./Components/WishList";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -25,6 +26,7 @@ function App() {
       <NAV_BAR setQuery={setQuery} />
       <Routes>
       <Route path="/" element={<Main filteredProducts={filteredProducts} setQuery={setQuery} />} />
+      <Route path="/wishlist" element={<WishList />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<ContactUs />} />
       {/* Signup page route */}

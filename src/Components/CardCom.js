@@ -10,9 +10,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import CardActions from "@mui/material/CardActions";
 
-export default function ProductCard({ title, price, img, describe }) {
+export default function ProductCard({ id, val, title, price, img, describe, isInWishList, handleWishList }) {
   const [open, setOpen] = useState(false);
-
+  // console.log(val);
   const handleModalToggle = () => {
     setOpen(!open);
   };
@@ -84,12 +84,14 @@ export default function ProductCard({ title, price, img, describe }) {
           </Button> */}
           <button
             className="custom-button"
-            onClick={handleModalToggle}
+            onClick={() => {handleWishList({id, title, price, img, describe})}}
             style={{
               background: "green",
             }}
           >
-            Add to Wishlist
+            {
+              isInWishList ? 'Remove' : 'Add to Wishlist'
+            }
           </button>
         </CardActions>
       </Card>
