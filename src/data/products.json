@@ -184,8 +184,16 @@
   {
     "id": 27,
     "title": "Casio Youth Series Digital Black",
-    "price": "₹43,999",
+    "price": "₹999",
     "describe": "Case Diameter: 38.2 × 35.2 × 8.5 millimeter | Dial Color: Black, Case Shape: Rectangula | Water Resistence Depth: 10 meter | Watch Movement Type: Quartz, Watch Display Type: Digital | Warranty type:Manufacturer; 2 Years Domestic Warranty",
     "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
+  },
+  {
+    "id": 28,
+    "title": "OLEVS Watch for Men Diamond",
+    "price": "₹2,850",
+    "describe": "Analog Quartz Watches for Men | 316L Stainless Steel Strap | 3ATM Waterproof Watch/Luminous | Branded Men Watches  ",
+    "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
   }
+  
 ]
