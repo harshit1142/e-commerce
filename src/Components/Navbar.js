@@ -6,10 +6,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaUser, FaSignInAlt, FaSignOutAlt, FaSearch, FaHome, FaInfoCircle, FaEnvelope, FaShoppingCart } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 function NAV_BAR({ setQuery }) {
-  
+  const navigate=useNavigate();
   const handleSearch = (event) => {
     setQuery(event.target.value);
   };
@@ -64,6 +64,7 @@ function NAV_BAR({ setQuery }) {
               variant="light"
               className="me-2"
               style={{ borderRadius: "50%" }}
+              onClick={() => navigate('/cart')}
             >
               <FaShoppingCart />
             </Button>
