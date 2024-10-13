@@ -83,27 +83,27 @@ export default function ProductCard({ id, val, title, price, img, describe, isIn
           >
             More Info
           </Button> */}
-          <button className="custom-button" onClick={handleModalToggle}>
+          <button className="btngg addmore" onClick={handleModalToggle}>
             More Info
           </button>
           {/* <Button className="custom-button" size="small" color="error">
             Add to Wishlist
           </Button> */}
           <button
-            className="custom-button"
+            className="btngg  addwhis"
             onClick={() => {handleWishList({id, title, price, img, describe})}}
-            style={{
-              background: "green",
-            }}
+            // style={{
+            //   background: "green",
+            // }}
           >
             {
               isInWishList ? 'Remove' : 'Add to Wishlist'
             }
           </button>
           <button
-            className="custom-button"
+            className="btngg addcart"
             onClick={() => {handleCart({id, title, price, img, describe})}}
-            style={{ background: "blue" }}
+            // style={{ background: "blue" }}
           >
             { isInCart ? 'Remove from Cart' : 'Add to Cart' }
           </button>
