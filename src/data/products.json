@@ -173,5 +173,27 @@
     "price": "₹22,999",
     "describe": "8GB RAM, 128GB Storage | India's 1st Dual AMOLED Display | MediaTek Dimensity 7300X Processor | 50MP Triple AI Rear Camera | 16 MP Front Camera | 66W Fast Charging | 5000mAh Battery",
     "img": "https://m.media-amazon.com/images/I/71xNcjUwEfL._SL1500_.jpg"
+  },
+  {
+    "id": 26,
+    "title": "Apple iPhone 13 (128GB) - Starlight",
+    "price": "₹43,999",
+    "describe": "8GB RAM, 128GB Storage | 15 cm (6.1-inch) Super Retina XDR display | Cinematic mode adds shallow depth of field and shifts focus automatically in your videos | Advanced dual-camera system with 12MP Wide and Ultra Wide cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby Vision HDR recording | 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording | 66W Fast Charging | A15 Bionic chip for lightning-fast performance",
+    "img": "https://m.media-amazon.com/images/I/71GLMJ7TQiL._SL1500_.jpg"
+  },
+  {
+    "id": 27,
+    "title": "Casio Youth Series Digital Black",
+    "price": "₹999",
+    "describe": "Case Diameter: 38.2 × 35.2 × 8.5 millimeter | Dial Color: Black, Case Shape: Rectangula | Water Resistence Depth: 10 meter | Watch Movement Type: Quartz, Watch Display Type: Digital | Warranty type:Manufacturer; 2 Years Domestic Warranty",
+    "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
+  },
+  {
+    "id": 28,
+    "title": "OLEVS Watch for Men Diamond",
+    "price": "₹2,850",
+    "describe": "Analog Quartz Watches for Men | 316L Stainless Steel Strap | 3ATM Waterproof Watch/Luminous | Branded Men Watches  ",
+    "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
   }
+  
 ]
