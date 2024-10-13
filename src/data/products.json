@@ -194,6 +194,111 @@
     "price": "₹2,850",
     "describe": "Analog Quartz Watches for Men | 316L Stainless Steel Strap | 3ATM Waterproof Watch/Luminous | Branded Men Watches  ",
     "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
+  },
+  {
+    "id": 29,
+    "title": "Sony WH-1000XM5",
+    "price": "₹29,990",
+    "describe": "Wireless Noise Cancelling Headphones, Up to 30 Hours Battery Life, Touch Controls, Hi-Res Audio, Alexa Voice Control",
+    "img": "https://m.media-amazon.com/images/I/31bNDAcLWEL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 30,
+    "title": "Canon EOS R5",
+    "price": "₹3,39,990",
+    "describe": "45MP Full-Frame Mirrorless Camera, 8K Video Recording, 5-Axis In-Body Image Stabilization, Wi-Fi & Bluetooth Connectivity",
+    "img": "https://m.media-amazon.com/images/I/51Gfu3ayEfL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 31,
+    "title": "Sony PlayStation 5",
+    "price": "₹49,990",
+    "describe": "Next-Gen Gaming Console with Ultra-High Speed SSD, Ray Tracing, 4K-TV Gaming, Up to 120fps, HDR Technology",
+    "img": "https://m.media-amazon.com/images/I/619BkvKW35L._SL1500_.jpg"
+  },
+  {
+    "id": 32,
+    "title": "GoPro Hero 11",
+    "price": "₹54,990",
+    "describe": "5.3K60 Ultra HD Video Recording, 27MP Photos, Waterproof Up to 10m, Live Streaming, Time Warp 3.0, SuperPhoto, Touch Screen",
+    "img": "https://m.media-amazon.com/images/I/31dAVTXGFDL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Amazon Kindle Paperwhite",
+    "price": "₹13,999",
+    "describe": "6.8-inch Display, Adjustable Warm Light, Waterproof, 32GB Storage, Wi-Fi, Battery Life Up to 10 Weeks",
+    "img": "https://m.media-amazon.com/images/I/5183wSEJFLL._SY300_SX300_.jpg"
+  },
+  {
+    "id": 34,
+    "title": "Apple iPad Pro 12.9-inch",
+    "price": "₹99,900",
+    "describe": "Liquid Retina XDR Display, M1 Chip, 12MP Wide Camera, Thunderbolt Port, Face ID, Up to 10 Hours Battery Life",
+    "img": "https://m.media-amazon.com/images/I/31d4ylLWPhL._SY445_SX342_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 35,
+    "title": "Dell XPS 13 Laptop",
+    "price": "₹1,39,990",
+    "describe": "11th Gen Intel Core i7, 16GB RAM, 512GB SSD, 13.4-inch InfinityEdge Display, Windows 11, Intel Iris Xe Graphics",
+    "img": "https://m.media-amazon.com/images/I/41qWHAbri2L._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 36,
+    "title": "Samsung Galaxy Watch 6",
+    "price": "₹29,990",
+    "describe": "1.4-inch Super AMOLED Display, GPS, Heart Rate Monitor, Sleep Tracking, 2GB RAM, 16GB Storage, Water Resistant",
+    "img": "https://m.media-amazon.com/images/I/41WXXkxrc+L._SY300_SX300_.jpg"
+  },
+  {
+    "id": 37,
+    "title": "Asus ROG Strix Gaming Laptop",
+    "price": "₹1,79,990",
+    "describe": "AMD Ryzen 9, 32GB RAM, 1TB SSD, GeForce RTX 3070, 15.6-inch QHD 165Hz Display, RGB Backlit Keyboard",
+    "img": "https://m.media-amazon.com/images/I/41GOdIayYKL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 38,
+    "title": "OnePlus Buds Pro 2",
+    "price": "₹11,990",
+    "describe": "Active Noise Cancellation, 11mm Dynamic Drivers, Dolby Atmos Support, IP55 Rated, 38 Hours Battery Life",
+    "img": "https://m.media-amazon.com/images/I/31Iep6vE+pL._SY300_SX300_.jpg"
+  },
+  {
+    "id": 39,
+    "title": "Bose SoundLink Revolve+",
+    "price": "₹25,999",
+    "describe": "Portable Bluetooth Speaker, 360-Degree Sound, Water-Resistant, Built-In Microphone, 16 Hours Battery Life",
+    "img": "https://m.media-amazon.com/images/I/31hYgf07coL._SY300_SX300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 40,
+    "title": "Fitbit Charge 5",
+    "price": "₹14,999",
+    "describe": "Advanced Fitness & Health Tracker with Stress Management, Sleep Tools, 7 Days Battery, Heart Rate Monitor",
+    "img": "https://m.media-amazon.com/images/I/31Vb8MtZZ9L._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 41,
+    "title": "Lenovo Legion 5 Gaming Laptop",
+    "price": "₹1,14,990",
+    "describe": "AMD Ryzen 7, 16GB RAM, 512GB SSD, NVIDIA GTX 1660 Ti, 15.6-inch FHD 144Hz Display, Backlit Keyboard",
+    "img": "https://m.media-amazon.com/images/I/51rvpbBSdpL._SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 42,
+    "title": "DJI Mini 3 Pro Drone",
+    "price": "₹1,19,990",
+    "describe": "4K Video at 60fps, 48MP Photos, 34 Minutes Flight Time, Intelligent Obstacle Sensing, Remote Controller Included",
+    "img": "https://m.media-amazon.com/images/I/31+kKnnt2+L._SY300_SX300_.jpg"
+  },
+  {
+    "id": 43,
+    "title": "Samsung QLED 8K Smart TV",
+    "price": "₹4,99,990",
+    "describe": "75-inch 8K Ultra HD Display, Quantum Processor 8K, Object Tracking Sound, Smart Hub, Alexa Built-In",
+    "img": "https://m.media-amazon.com/images/I/41V19-rutzL._SY300_SX300_QL70_FMwebp_.jpg"
   }
   
 ]
