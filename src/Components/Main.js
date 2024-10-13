@@ -32,7 +32,7 @@ const Main = ({ filteredProducts, setQuery }) => {
     if (storedCart) {
       setCart(JSON.parse(storedCart));
     } else {
-      setCart([]); // Initialize to an empty array if null
+      setCart([]); 
     }
   }, []);
 
