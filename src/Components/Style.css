@@ -34,7 +34,6 @@
   /* background-color: #e94560; */
   color: #ffffff;
   font-size:17px;
-  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: flex;
@@ -43,18 +42,18 @@
 }
 
 .addmore{
-  background-color: #e94560;
+  background-color: #e94545;
 }
 
 .addcart{
-  background-color: rgb(10, 136, 10);
+  background-color: #27ae60;
 }
 .addwhis{
-  background-color: #459ae9;
+  background-color: #3c91e6;
 }
 
 .addcart:hover{
-  background-color: rgb(3, 135, 3);
+  background-color: #1c8247;
 }
 .addmore:hover{
   background-color: #e52a49;

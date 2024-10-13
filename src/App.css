@@ -15,7 +15,7 @@ button {
 
 .navbary {
   background-color: #3c91e6 !important; /* Soft blue for navbar */
-  color: white !important;
+  color: #000 !important;
 }
 
 .top-bar {
@@ -27,6 +27,11 @@ button {
 
 .logo img {
   height: 40px;
+  border-radius: 20px;
+}
+
+.shadow1{
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .user-options button {
@@ -48,7 +53,7 @@ button {
 
 main {
   padding: 40px;
-  background-color: #f0f4f8;
+  background-color: #d1d5db;
 }
 
 .sell-btn,
@@ -57,7 +62,7 @@ main {
   color: white;
   border: none;
   padding: 12px 25px;
-  border-radius: 30px;
+  border-radius: 6px;
   margin-bottom: 10px;
   margin-left: 4px;
   transition: background-color 0.3s, transform 0.3s;
@@ -82,7 +87,7 @@ main {
   gap: 10px;
   width: 100%;
   min-height: 70vh;
-  background-color: #f0f4f8;
+  background-color: #d1d5db;
   padding: 20px;
 }
 
@@ -230,10 +235,9 @@ button {
 }
 
 .custom-button {
-  border-radius: 50px; /* Rounded edges */
+  border-radius: 6px; /* Rounded edges */
   padding: 14px 20px; /* Increased padding */
-  font-weight: bold; /* Bold text */
-  background-color: #4e98e2;
+  background-color: #27ae60;
   color: white;
   transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
 }

@@ -158,7 +158,7 @@ export default function ProductCard({ id, val, title, price, img, describe, isIn
           <button
             className="custom-button"
             onClick={handleModalToggle}
-            style={{ backgroundColor: "blue", marginBottom: "10px" }}
+            style={{ backgroundColor: "#3c91e6", marginBottom: "10px" }}
           >
             Chat with Seller
           </button>

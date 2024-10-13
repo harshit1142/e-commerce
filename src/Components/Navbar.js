@@ -18,7 +18,6 @@ function NAV_BAR({ setQuery }) {
     <Navbar
       expand="lg"
       className="bg-body-tertiary text-light sticky-top shadow"
-      style={{ background: "linear-gradient(to right, #4e54c8, #8f94fb)" }}
     >
       <Container
         fluid
@@ -28,21 +27,21 @@ function NAV_BAR({ setQuery }) {
           <img
             src="https://w7.pngwing.com/pngs/621/196/png-transparent-e-commerce-logo-logo-e-commerce-electronic-business-ecommerce-angle-text-service.png"
             alt="logo"
-            className="brand-logo me-2"
+            className="brand-logo me-2 shadow1"
             style={{ width: "60px", height: "60px", objectFit: "cover" }}
           />
-          <span className="font-weight-bold text-white">E-commerce</span>
+          <span className="font-weight-bold text-black">E-commerce</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto d-flex align-items-center">
-            <Nav.Link as={Link} to="/" className="nav-link text-white">
+            <Nav.Link as={Link} to="/" className="nav-link text-black">
               <FaHome className="me-1" /> Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" className="nav-link text-white">
+            <Nav.Link as={Link} to="/about" className="nav-link text-black">
               <FaInfoCircle className="me-1" /> About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-link text-white">
+            <Nav.Link as={Link} to="/contact" className="nav-link text-black">
               <FaEnvelope className="me-1" /> Contact
             </Nav.Link>
           </Nav>
@@ -51,7 +50,7 @@ function NAV_BAR({ setQuery }) {
               <Form.Control
                 type="search"
                 placeholder="Search products..."
-                className="me-2"
+                className="me-2 shadow1"
                 aria-label="Search"
                 style={{ width: "200px", borderRadius: "20px" }}
                 onChange={handleSearch}
@@ -86,8 +85,8 @@ function NAV_BAR({ setQuery }) {
             </NavDropdown>
             <div className="sign-buts">
               <Button
-                variant="outline-light"
-                className="me-2 sign-button"
+                variant="light"
+                className="me-2 sign-button shadow1"
                 title="Sign In"
                 as={Link} // Use Link for client-side navigation
                 to="/signup" // Navigate to the signup page
@@ -97,7 +96,7 @@ function NAV_BAR({ setQuery }) {
               </Button>
               <Button
                 variant="light"
-                className="sign-button"
+                className="sign-button shadow1"
                 title="Sign Out"
                 href="#logout"
                 style={{ borderRadius: "20px" }}
