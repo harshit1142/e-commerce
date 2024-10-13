@@ -4,12 +4,13 @@ import { Form, Button, Container } from "react-bootstrap";
 
 function Signup() {
   const [formData, setFormData] = useState({
-    username: "",
-    age: "",
-    mobile: "",
-    email: "",
-    password: "",
-  });
+		username: "",
+		age: "",
+		mobile: "",
+		email: "",
+		password: "",
+		repassword: "",
+	});
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -101,7 +102,7 @@ function Signup() {
           <Form.Label>Re enter Password:</Form.Label>
           <Form.Control
             type="password"
-            name="password"
+            name="repassword"
             value={formData.repassword}
             onChange={handleChange}
             placeholder="Enter mobile number"
