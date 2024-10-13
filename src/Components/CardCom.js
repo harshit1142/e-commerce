@@ -10,12 +10,19 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import CardActions from "@mui/material/CardActions";
 
-export default function ProductCard({ id, val, title, price, img, describe, isInWishList, handleWishList }) {
+export default function ProductCard({ id, val, title, price, img, describe, isInWishList, isInCart, handleWishList,handleCart}) {
   const [open, setOpen] = useState(false);
   // console.log(val);
   const handleModalToggle = () => {
     setOpen(!open);
   };
+  // const handleAddToCart = () => {
+  //   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  //   const newItem = { id, title, price, img, describe };
+  //   const updatedCartItems = [...cartItems, newItem];
+  //   localStorage.setItem('cart', JSON.stringify(updatedCartItems));
+  //   alert("Product added to cart!");
+  // };
 
   return (
     <>
@@ -76,22 +83,29 @@ export default function ProductCard({ id, val, title, price, img, describe, isIn
           >
             More Info
           </Button> */}
-          <button className="custom-button" onClick={handleModalToggle}>
+          <button className="btngg addmore" onClick={handleModalToggle}>
             More Info
           </button>
           {/* <Button className="custom-button" size="small" color="error">
             Add to Wishlist
           </Button> */}
           <button
-            className="custom-button"
+            className="btngg  addwhis"
             onClick={() => {handleWishList({id, title, price, img, describe})}}
-            style={{
-              background: "green",
-            }}
+            // style={{
+            //   background: "green",
+            // }}
           >
             {
               isInWishList ? 'Remove' : 'Add to Wishlist'
             }
+          </button>
+          <button
+            className="btngg addcart"
+            onClick={() => {handleCart({id, title, price, img, describe})}}
+            // style={{ background: "blue" }}
+          >
+            { isInCart ? 'Remove from Cart' : 'Add to Cart' }
           </button>
         </CardActions>
       </Card>

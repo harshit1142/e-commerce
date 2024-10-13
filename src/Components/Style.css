@@ -26,6 +26,48 @@
 }
 
 
+.btngg{
+  height: 50px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  /* background-color: #e94560; */
+  color: #ffffff;
+  font-size:17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addmore{
+  background-color: #e94560;
+}
+
+.addcart{
+  background-color: rgb(10, 136, 10);
+}
+.addwhis{
+  background-color: #459ae9;
+}
+
+.addcart:hover{
+  background-color: rgb(3, 135, 3);
+}
+.addmore:hover{
+  background-color: #e52a49;
+}
+.addwhis:hover{
+  background-color: rgb(27, 85, 146);
+}
+.btngg:hover {
+  transform: scale(1.05);
+  /* background-color:#f2526d ; */
+  color: #ffff;
+}
+
 
 
 /* Contact Us Page */
@@ -91,4 +133,6 @@
       padding: 1.5rem;
     }
   }
+
+
   

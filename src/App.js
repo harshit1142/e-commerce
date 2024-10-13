@@ -11,6 +11,7 @@ import AboutUs from "./Components/AboutUs";
 import ContactUs from "./Components/ContactUs";
 import Main from "./Components/Main";
 import WishList from "./Components/WishList";
+import CartPage from "./Components/CartPage";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -29,6 +30,7 @@ function App() {
       <Route path="/wishlist" element={<WishList />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/cart" element={<CartPage/>} />
       {/* Signup page route */}
       <Route path="/signup" element={<Signup />} />
       </Routes>

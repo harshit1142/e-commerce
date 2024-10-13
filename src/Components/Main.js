@@ -6,16 +6,36 @@ const Main = ({ filteredProducts, setQuery }) => {
   const [sortType, setSortType] = useState(''); 
   const [sortedProducts, setSortedProducts] = useState([...filteredProducts]);
   const [wishList, setWishList] = useState([]);
+  const [cart, setCart] = useState([]); // New state for cart
 
   const navigate = useNavigate();
 
   // Load wishlist from localStorage when the component mounts
+  // useEffect(() => {
+  //   const storedWishlist = localStorage.getItem('wishlist');
+  //   const storedCart = localStorage.getItem('cart');
+  //   if (storedWishlist) setWishList(JSON.parse(storedWishlist));
+  //   if (storedCart) setCart(JSON.parse(storedCart)); // Load cart
+  // }, []); 
+
   useEffect(() => {
     const storedWishlist = localStorage.getItem('wishlist');
+    const storedCart = localStorage.getItem('cart');
+    
+    // If localStorage returns null, initialize as an empty array
     if (storedWishlist) {
-      setWishList(JSON.parse(storedWishlist)); 
+      setWishList(JSON.parse(storedWishlist));
+    } else {
+      setWishList([]); // Initialize to an empty array if null
     }
-  }, []); 
+  
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    } else {
+      setCart([]); // Initialize to an empty array if null
+    }
+  }, []);
+  
 
   // Toggle add/remove product from wishlist
   const handleWishList = (product) => {
@@ -30,6 +50,17 @@ const Main = ({ filteredProducts, setQuery }) => {
       setWishList(newList);
       localStorage.setItem('wishlist', JSON.stringify(newList));
     }
+  };
+
+
+  const handleCart = (product) => {
+    const isPresent = cart.some(item => item.id === product.id);
+    const newList = isPresent
+      ? cart.filter(item => item.id !== product.id)
+      : [...cart, product];
+
+    setCart(newList);
+    localStorage.setItem('cart', JSON.stringify(newList));
   };
 
   const parsePrice = (priceStr) => {
@@ -53,11 +84,12 @@ const Main = ({ filteredProducts, setQuery }) => {
     // Add `isInWishlist` to each product
     const updatedArray = sortedArray.map((product) => ({
       ...product,
-      isInWishlist: wishList.some(item => item.id === product.id)  // Check if in wishlist
+      isInWishlist: wishList.some(item => item.id === product.id),  // Check if in wishlist
+      isInCart: cart.some(item => item.id === product.id), // Check if in cart
     }));
 
     setSortedProducts(updatedArray);
-  }, [wishList, sortType, filteredProducts]);  // Re-run when wishlist, sortType, or filteredProducts change
+  }, [wishList,cart, sortType, filteredProducts]);  // Re-run when wishlist, sortType, or filteredProducts change
 
   const handleSortChange = (e) => {
     const value = e.target.value;
@@ -101,7 +133,9 @@ const Main = ({ filteredProducts, setQuery }) => {
             describe={product.describe}
             img={product.img}
             isInWishList={product.isInWishlist}
+            isInCart={product.isInCart}
             handleWishList={() => handleWishList(product)}
+            handleCart={()=>handleCart(product)}
           />
         ))}
       </div>
