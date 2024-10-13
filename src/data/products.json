@@ -194,6 +194,37 @@
     "price": "₹2,850",
     "describe": "Analog Quartz Watches for Men | 316L Stainless Steel Strap | 3ATM Waterproof Watch/Luminous | Branded Men Watches  ",
     "img": "https://m.media-amazon.com/images/I/51oNy5CTCOL._SX679_.jpg"
-  }
+  },
+  {
+    "id": 29,
+    "title": "Android Tablet",
+    "price": "₹5,886.65",
+    "describe": "10 Inch Android 12 Tablet| 6GB RAM 64GB ROM, 1TB Expand | 8000mAh Long Battery | Dual Camera | 5G WiFi | Bluetooth | FHD Touch Screen, GPS | GMS Certified",
+    "img": "https://m.media-amazon.com/images/I/71ortBpkH8L._AC_SX466_.jpg"
+  },
+  [
+    {
+      "id": 30,
+      "title": "Casio Men's G-Shock",
+      "price": "₹4,999",
+      "describe": "Analog-Digital Watch | Resin Strap | 200M Water Resistance | Shock Resistant",
+      "img": "https://m.media-amazon.com/images/I/61wB0XXeO6L._AC_SX569_.jpg"
+    },
+    {
+      "id": 31,
+      "title": "Fossil Townsman",
+      "price": "₹9,999",
+      "describe": "Automatic Skeleton Dial | Leather Strap | Water Resistant Watch | Fossil Branding",
+      "img": "https://m.media-amazon.com/images/I/71slr97kP1S._AC_SX679_.jpg"
+    },
+    {
+      "id": 32,
+      "title": "Timex Men's Expedition",
+      "price": "₹3,450",
+      "describe": "Field Chronograph Watch | Leather Strap | 30M Water Resistance | Indiglo Light-Up Watch Dial",
+      "img": "https://m.media-amazon.com/images/I/71spWNT8LEL._AC_SX522_.jpg"
+    }
+  ]
+  
   
 ]
