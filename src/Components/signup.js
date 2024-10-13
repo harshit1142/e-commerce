@@ -22,9 +22,35 @@ function Signup() {
 
   function clickHandler(e) {
     e.preventDefault();
-    toast.success("Signup Successfully");
-    navigate("/");
-  }
+    if (formData['password'] !== formData['repassword']) {
+      toast.error("Password do not match!");
+      return;
+    }
+
+		const emailRegex = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/; // Email pattern
+		const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/; // At least 6 characters, 1 letter and 1 number
+    const mobileRegex = /^\d{10}$/; // Exactly 10 digits
+    
+		if (formData['age'] < 0) {
+			toast.error("Invalid Age");
+			return;
+		}
+		if (!mobileRegex.test(formData['mobile'])) {
+			toast.error("Invalid Mobile No");
+			return;
+		}
+		if (!emailRegex.test(formData['email'])) {
+			toast.error("Invalid Email");
+			return;
+    }
+    if (!passwordRegex.test(formData['password'])) {
+      if (formData['password'].length < 6) toast.error("Password length must be 6");
+      else toast.error("Password must have one alphabet and one number");
+      return;
+    }
+		toast.success("Signup Successfully");
+		navigate("/");
+	}
 
   const handleSubmit = (event) => {
     event.preventDefault();
