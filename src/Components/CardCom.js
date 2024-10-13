@@ -28,15 +28,35 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
       {/* Card Layout */}
       <Card
         sx={{
-          maxWidth: 400,
-          boxShadow: 5,
+          minHeight: "400px",
+          height: "100%",
+          maxWidth: "400px",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          padding: "20px 10px",
           borderRadius: "15px",
           margin: "20px auto",
           padding: "30px 25px",
         }}// Updated styles
         className="card-hover"
       >
-        <CardActionArea onClick={handleModalToggle}>
+        <CardActionArea
+          onClick={handleModalToggle}
+          sx={{
+            minHeight: "200px",
+            height: "100%",
+            marginBottom: "10px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+          }}
+        >
+          {/* Image of Product */}
           <CardMedia
             component="img"
             height="120"  // Adjust this height as needed
@@ -60,6 +80,11 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
               sx={{
                 height: "80px",
                 overflow: "hidden",
+                mb: 1,
+                textOverflow: "ellipsis",
+                display: "-webkit-box",
+                WebkitLineClamp: 4,
+                WebkitBoxOrient: "vertical",
                 mb: 1,
                 textOverflow: "ellipsis",
                 display: "-webkit-box",

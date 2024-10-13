@@ -28,9 +28,9 @@ const CartPage = () => {
   };
 
   return (
-    <div>
+    <div style={{width: '100vw', height: 'auto'}}>
         <div className='d-flex align-items-center justify-content-between'>
-            <h1>Your Cart</h1>
+            <h1 style={{fontSize: '3rem', fontWeight: 'bolder', textAlign: 'center', margin: '0px auto'}}>Your Cart</h1>
             {cartItems.length > 0 && (
                 <>
                     {/* Display Total Price */}
@@ -73,7 +73,7 @@ const CartPage = () => {
            
           ))
       ) : (
-        <p>Your cart is empty.</p>
+        <p style={{textAlign: 'center', fontSize: '2rem', fontWeight: 'bold', marginTop: '-200px'}}>Your cart is empty!</p>
       )}
       </div>
     </div>
