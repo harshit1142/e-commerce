@@ -5,7 +5,7 @@ const WishList = () => {
     const [wishList, setWishList] = useState([]);
 
     useEffect(() => {
-        const storedList = localStorage.getItem('wishlist');
+        const storedList = localStorage.getItem('wishlist')||[];
         if(storedList.length > 0) {
             setWishList(JSON.parse(storedList));
         }

@@ -19,9 +19,9 @@ const Main = ({ filteredProducts, setQuery }) => {
   // }, []);
 
   useEffect(() => {
-    const storedWishlist = localStorage.getItem("wishlist");
-    const storedCart = localStorage.getItem("cart");
-
+    const storedWishlist = localStorage.getItem('wishlist')||[];
+    const storedCart = localStorage.getItem('cart');
+    
     // If localStorage returns null, initialize as an empty array
     if (storedWishlist) {
       setWishList(JSON.parse(storedWishlist));
