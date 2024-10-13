@@ -48,7 +48,8 @@ export default function ProductCard({
           flexDirection: "column",
           justifyContent: "space-evenly",
           alignItems: "center",
-          padding: "10px",
+          padding: "20px 10px",
+          borderRadius: "15px",
         }}
         className="card-hover"
       >

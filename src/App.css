@@ -221,7 +221,7 @@ button {
 .select-btn {
   display: flex;
   justify-content: center; /* Centers the button horizontally */
-  margin-top: 20px; /* Adds space above the button */
+  margin: 20px; /* Adds space above the button */
 }
 
 .product-card .select-btn {
