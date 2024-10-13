@@ -29,4 +29,9 @@ const contributors = [
     fullname: "Aaditya Padte",
     username: "https://github.com/Aaditya8C",
   },
+  {
+    id:7,
+    fullname: "Pratham Rameshwar ",
+    username: "https://github.com/pratham145",
+  },
 ];
