@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import './signup.css'; 
 import { Form, Button, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function Signup() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
 		username: "",
 		age: "",
@@ -16,6 +19,12 @@ function Signup() {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  function clickHandler(e) {
+    e.preventDefault();
+    toast.success("Signup Successfully");
+    navigate("/");
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -110,7 +119,7 @@ function Signup() {
           />
         </Form.Group>
 
-        <Button className="signup-button" variant="primary" type="submit">
+        <Button className="signup-button" variant="primary" type="submit" onClick={clickHandler}>
           Sign Up
         </Button>
       </Form>
