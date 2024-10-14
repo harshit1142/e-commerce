@@ -12,6 +12,7 @@ import ContactUs from "./Components/ContactUs";
 import Main from "./Components/Main";
 import WishList from "./Components/WishList";
 import CartPage from "./Components/CartPage";
+import Error from "./Components/Error"
 
 function App() {
   const [query, setQuery] = useState("");
@@ -33,6 +34,7 @@ function App() {
       <Route path="/cart" element={<CartPage/>} />
       {/* Signup page route */}
       <Route path="/signup" element={<Signup />} />
+      <Route path="*" element={<Error />} />
       </Routes>
       
       <Footer />
