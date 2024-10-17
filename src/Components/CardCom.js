@@ -10,13 +10,23 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import CardActions from "@mui/material/CardActions";
 
-export default function ProductCard({ id, title, price, img, describe, isInWishList, isInCart, handleWishList, handleCart }) {
+export default function ProductCard({
+  id,
+  title,
+  price,
+  img,
+  describe,
+  isInWishList,
+  isInCart,
+  handleWishList,
+  handleCart,
+}) {
   const [open, setOpen] = useState(false);
-   // console.log(val);
+  // console.log(val);
   const handleModalToggle = () => {
     setOpen(!open);
   };
-// const handleAddToCart = () => {
+  // const handleAddToCart = () => {
   //   const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
   //   const newItem = { id, title, price, img, describe };
   //   const updatedCartItems = [...cartItems, newItem];
@@ -36,11 +46,10 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
           flexDirection: "column",
           justifyContent: "space-evenly",
           alignItems: "center",
-          padding: "20px 10px",
           borderRadius: "15px",
           margin: "20px auto",
           padding: "30px 25px",
-        }}// Updated styles
+        }} // Updated styles
         className="card-hover"
       >
         <CardActionArea
@@ -59,19 +68,23 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
           {/* Image of Product */}
           <CardMedia
             component="img"
-            height="120"  // Adjust this height as needed
-            
+            height="120" // Adjust this height as needed
             image={img}
             alt={title}
             style={{
               objectFit: "contain",
               width: "100%",
-              borderTopLeftRadius: "15px",  // Rounded corners
+              borderTopLeftRadius: "15px", // Rounded corners
               borderTopRightRadius: "15px",
             }}
           />
           <CardContent sx={{ height: "200px" }}>
-            <Typography gutterBottom variant="h5" component="div" align="center">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              align="center"
+            >
               {title}
             </Typography>
             <Typography
@@ -80,11 +93,6 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
               sx={{
                 height: "80px",
                 overflow: "hidden",
-                mb: 1,
-                textOverflow: "ellipsis",
-                display: "-webkit-box",
-                WebkitLineClamp: 4,
-                WebkitBoxOrient: "vertical",
                 mb: 1,
                 textOverflow: "ellipsis",
                 display: "-webkit-box",
@@ -108,20 +116,22 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
             className="btngg addwhis"
             onClick={() => handleWishList({ id, title, price, img, describe })}
           >
-            {isInWishList ? 'Remove' : 'Add to Wishlist'}
+            {isInWishList ? "Remove" : "Add to Wishlist"}
           </button>
           <button
             className="btngg addcart"
             onClick={() => handleCart({ id, title, price, img, describe })}
           >
-            {isInCart ? 'Remove from Cart' : 'Add to Cart'}
+            {isInCart ? "Remove from Cart" : "Add to Cart"}
           </button>
         </CardActions>
       </Card>
 
       {/* Modal/Dialog */}
       <Dialog open={open} onClose={handleModalToggle} maxWidth="md" fullWidth>
-        <DialogTitle sx={{ pb: 2 }} align="center">{title}</DialogTitle>
+        <DialogTitle sx={{ pb: 2 }} align="center">
+          {title}
+        </DialogTitle>
         <DialogContent>
           <CardMedia
             component="img"
@@ -140,7 +150,12 @@ export default function ProductCard({ id, title, price, img, describe, isInWishL
           </Typography>
           <br />
           <b>Price:</b>
-          <Typography variant="h5" color="success.main" sx={{ mt: 2 }} align="center">
+          <Typography
+            variant="h5"
+            color="success.main"
+            sx={{ mt: 2 }}
+            align="center"
+          >
             {price}
           </Typography>
         </DialogContent>

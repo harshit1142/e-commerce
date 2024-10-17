@@ -27,7 +27,7 @@ function Signup() {
       return;
     }
 
-		const emailRegex = /^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/; // Email pattern
+		const emailRegex = /^[\w-]+@[a-zA-Z\d-]+\.[a-zA-Z]{2,}$/; // Email pattern
 		const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/; // At least 6 characters, 1 letter and 1 number
     const mobileRegex = /^\d{10}$/; // Exactly 10 digits
     
