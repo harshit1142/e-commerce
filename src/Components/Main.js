@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "./CardCom";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Button } from "@mui/material";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@radix-ui/react-select";
 
 const Main = ({ filteredProducts, setQuery }) => {
   const [sortType, setSortType] = useState("");
@@ -8,6 +17,8 @@ const Main = ({ filteredProducts, setQuery }) => {
   const [wishList, setWishList] = useState([]);
   const [cart, setCart] = useState([]);
   const [priceRange, setPriceRange] = useState({ lower: 0, upper: Infinity });
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
 
   const navigate = useNavigate();
 
@@ -107,6 +118,22 @@ const Main = ({ filteredProducts, setQuery }) => {
     }));
   };
 
+  const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const handleItemsPerPageChange = (value) => {
+    setItemsPerPage(Number(value));
+    setCurrentPage(1); // Reset to first page when changing items per page
+  };
+
+  const paginatedProducts = sortedProducts.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
   return (
     <main>
       <div className="select-btn">
@@ -146,7 +173,7 @@ const Main = ({ filteredProducts, setQuery }) => {
         />
       </div>
       <div className="product-cards">
-        {sortedProducts.map((product) => (
+        {paginatedProducts.map((product) => (
           <Card
             key={product.val}
             val={product.val}
@@ -161,6 +188,31 @@ const Main = ({ filteredProducts, setQuery }) => {
             handleCart={() => handleCart(product)}
           />
         ))}
+      </div>
+      <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-white text-black rounded-lg shadow">
+        <div className="flex items-center space-x-2">
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            <ChevronLeft className="h-4 w-4" />
+            <span className="sr-only">Previous page</span>
+          </Button>
+          <span className="text-sm font-medium">
+            Page {currentPage} of {totalPages}
+          </span>
+          <Button
+            variant="outline"
+            size="icon"
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            <ChevronRight className="h-4 w-4" />
+            <span className="sr-only">Next page</span>
+          </Button>
+        </div>
       </div>
     </main>
   );
