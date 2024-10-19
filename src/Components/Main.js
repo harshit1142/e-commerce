@@ -23,17 +23,8 @@ const Main = ({ filteredProducts, setQuery }) => {
     const storedCart = localStorage.getItem("cart");
 
     // If localStorage returns null, initialize as an empty array
-    if (storedWishlist) {
-      setWishList(JSON.parse(storedWishlist));
-    } else {
-      setWishList([]); // Initialize to an empty array if null
-    }
-
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    } else {
-      setCart([]);
-    }
+    setWishList(Array.isArray(storedWishlist) ? storedWishlist : []);
+  setCart(Array.isArray(storedCart) ? storedCart : []);
   }, []);
 
   // Toggle add/remove product from wishlist
@@ -122,7 +113,7 @@ const Main = ({ filteredProducts, setQuery }) => {
           onChange={handleSortChange}
           style={{ width: "200px" }}
         >
-          <option selected>Sort By</option>
+          <option value="">Sort By</option>
           <option value="1">Price: Low to High</option>
           <option value="2">Price: High to Low</option>
         </select>
@@ -130,7 +121,7 @@ const Main = ({ filteredProducts, setQuery }) => {
       <div className="product-cards">
         {sortedProducts.map((product) => (
           <Card
-            key={product.val}
+            key={product.id}
             val={product.val}
             id={product.id}
             title={product.title}

@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Card from './CardCom'
+import { div } from 'framer-motion/client';
+import emptyCart from '../data/emptyCart.png'
+import { Link } from 'react-router-dom';
+
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
 
@@ -29,17 +33,13 @@ const CartPage = () => {
 
   return (
     <div style={{width: '100vw', height: 'auto'}}>
-        <div className='d-flex align-items-center justify-content-between'>
+        <div  style={{display: 'flex', flexDirection : 'column', alignItems : 'center'}}>
             <h1 style={{fontSize: '3rem', fontWeight: 'bolder', textAlign: 'center', margin: '0px auto'}}>Your Cart</h1>
             {cartItems.length > 0 && (
                 <>
                     {/* Display Total Price */}
-                    <div style={{ marginTop: '20px', fontSize: '1.5em', fontWeight: 'bold' }}>
-                        Total Amount: ₹{getTotalPrice().toFixed(2)}
-                    </div>
-
-                    {/* Buy Button */}
-                    <div>
+                    <div style={{display : 'flex' , gap : '40px' , marginTop : '20px'}}>
+                        <h2 style={{ marginTop: '20px', fontSize: '1.5em', fontWeight: 'bold' }}>Total Amount: ₹{getTotalPrice().toFixed(2)}</h2>
                         <button
                         className="custom-button"
                         onClick={handleBuy}
@@ -58,6 +58,7 @@ const CartPage = () => {
         </div> 
       <div className='product-cards'>
       {cartItems.length > 0 ? (
+        
           cartItems.map((product) => (
              <Card
              key={product.val}
@@ -70,10 +71,12 @@ const CartPage = () => {
              isInCart={true}
              handleCart={handleCart}
            />
-           
           ))
       ) : (
-        <p style={{textAlign: 'center', fontSize: '2rem', fontWeight: 'bold', marginTop: '-200px'}}>Your cart is empty!</p>
+        <div style= {{padding : '10px', textAlign : 'center' ,alignItems : 'center'}}>
+          <img style= {{padding : '10px',}} src={emptyCart} alt='Empty Cart' />
+          <Link to='/'><button style= {{padding : '20px' , backgroundColor: '#3d0ccf' , borderRadius: '10px', fontWeight : 'bold', color : 'white' , margin : 'auto'}}>Lets go Shopping</button></Link>
+          </div>
       )}
       </div>
     </div>
