@@ -6,27 +6,19 @@ const Main = ({ filteredProducts, setQuery }) => {
   const [sortType, setSortType] = useState("");
   const [sortedProducts, setSortedProducts] = useState([...filteredProducts]);
   const [wishList, setWishList] = useState([]);
-  const [cart, setCart] = useState([]); // New state for cart
+  const [cart, setCart] = useState([]);
+  const [priceRange, setPriceRange] = useState({ lower: 0, upper: Infinity });
 
   const navigate = useNavigate();
-
-  // Load wishlist from localStorage when the component mounts
-  // useEffect(() => {
-  //   const storedWishlist = localStorage.getItem('wishlist');
-  //   const storedCart = localStorage.getItem('cart');
-  //   if (storedWishlist) setWishList(JSON.parse(storedWishlist));
-  //   if (storedCart) setCart(JSON.parse(storedCart)); // Load cart
-  // }, []);
 
   useEffect(() => {
     const storedWishlist = localStorage.getItem("wishlist");
     const storedCart = localStorage.getItem("cart");
 
-    // If localStorage returns null, initialize as an empty array
     if (storedWishlist) {
       setWishList(JSON.parse(storedWishlist));
     } else {
-      setWishList([]); // Initialize to an empty array if null
+      setWishList([]);
     }
 
     if (storedCart) {
@@ -36,7 +28,6 @@ const Main = ({ filteredProducts, setQuery }) => {
     }
   }, []);
 
-  // Toggle add/remove product from wishlist
   const handleWishList = (product) => {
     const isPresent = wishList.some((item) => item.id === product.id);
 
@@ -68,6 +59,12 @@ const Main = ({ filteredProducts, setQuery }) => {
   useEffect(() => {
     let sortedArray = [...filteredProducts];
 
+    // Filter products based on price range
+    sortedArray = sortedArray.filter((product) => {
+      const price = parsePrice(product.price);
+      return price >= priceRange.lower && price <= priceRange.upper;
+    });
+
     switch (sortType) {
       case "priceLowToHigh":
         sortedArray.sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
@@ -79,15 +76,14 @@ const Main = ({ filteredProducts, setQuery }) => {
         sortedArray = [...filteredProducts];
     }
 
-    // Add `isInWishlist` to each product
     const updatedArray = sortedArray.map((product) => ({
       ...product,
-      isInWishlist: wishList.some((item) => item.id === product.id), // Check if in wishlist
-      isInCart: cart.some((item) => item.id === product.id), // Check if in cart
+      isInWishlist: wishList.some((item) => item.id === product.id),
+      isInCart: cart.some((item) => item.id === product.id),
     }));
 
     setSortedProducts(updatedArray);
-  }, [wishList, cart, sortType, filteredProducts]); // Re-run when wishlist, sortType, or filteredProducts change
+  }, [wishList, cart, sortType, filteredProducts, priceRange]);
 
   const handleSortChange = (e) => {
     const value = e.target.value;
@@ -101,6 +97,14 @@ const Main = ({ filteredProducts, setQuery }) => {
       default:
         setSortType("");
     }
+  };
+
+  const handlePriceRangeChange = (e) => {
+    const { name, value } = e.target;
+    setPriceRange((prevRange) => ({
+      ...prevRange,
+      [name]: value ? Number(value) : (name === "lower" ? 0 : Infinity),
+    }));
   };
 
   return (
@@ -126,6 +130,20 @@ const Main = ({ filteredProducts, setQuery }) => {
           <option value="1">Price: Low to High</option>
           <option value="2">Price: High to Low</option>
         </select>
+      </div>
+      <div className="price-range-inputs">
+        <input
+          type="number"
+          name="lower"
+          placeholder="Lower bound"
+          onChange={handlePriceRangeChange}
+        />
+        <input
+          type="number"
+          name="upper"
+          placeholder="Upper bound"
+          onChange={handlePriceRangeChange}
+        />
       </div>
       <div className="product-cards">
         {sortedProducts.map((product) => (
