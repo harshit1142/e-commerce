@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Card from './CardCom'
-import { div } from 'framer-motion/client';
+import { useEffect, useState } from 'react';
+import Card from './CardCom';
 import emptyCart from '../data/emptyCart.png'
 import { Link } from 'react-router-dom';
 
