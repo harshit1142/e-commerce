@@ -23,8 +23,17 @@ const Main = ({ filteredProducts, setQuery }) => {
     const storedCart = localStorage.getItem("cart");
 
     // If localStorage returns null, initialize as an empty array
-    setWishList(Array.isArray(storedWishlist) ? storedWishlist : []);
-  setCart(Array.isArray(storedCart) ? storedCart : []);
+    if (storedWishlist) {
+      setWishList(JSON.parse(storedWishlist));
+    } else {
+      setWishList([]); // Initialize to an empty array if null
+    }
+
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    } else {
+      setCart([]);
+    }
   }, []);
 
   // Toggle add/remove product from wishlist
