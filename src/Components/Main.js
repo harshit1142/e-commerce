@@ -153,7 +153,7 @@ const Main = ({ filteredProducts, setQuery }) => {
           onChange={handleSortChange}
           style={{ width: "200px" }}
         >
-          <option selected>Sort By</option>
+          <option value="">Sort By</option>
           <option value="1">Price: Low to High</option>
           <option value="2">Price: High to Low</option>
         </select>
@@ -175,7 +175,7 @@ const Main = ({ filteredProducts, setQuery }) => {
       <div className="product-cards">
         {paginatedProducts.map((product) => (
           <Card
-            key={product.val}
+            key={product.id}
             val={product.val}
             id={product.id}
             title={product.title}

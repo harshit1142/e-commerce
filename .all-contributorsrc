@@ -90,4 +90,14 @@
         "data"
       ]
     },
+    {
+      "login": "devDEV03",
+      "name": "Dev Singhal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134224065?v=4",
+      "profile": "https://github.com/devDEV03",
+      "contributions": [
+        "design",
+        "optimization"
+      ]
+    },
   ]
