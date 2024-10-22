@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Card from "./CardCom";
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@mui/material";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@radix-ui/react-select";
+
 
 const Main = ({ filteredProducts, setQuery }) => {
   const [sortType, setSortType] = useState("");
@@ -64,7 +58,7 @@ const Main = ({ filteredProducts, setQuery }) => {
   };
 
   const parsePrice = (priceStr) => {
-    return Number(priceStr.replace(/[^0-9.-]+/g, ""));
+    return Number(String(priceStr).replace(/[^0-9.-]+/g, ""));
   };
 
   useEffect(() => {
@@ -114,7 +108,7 @@ const Main = ({ filteredProducts, setQuery }) => {
     const { name, value } = e.target;
     setPriceRange((prevRange) => ({
       ...prevRange,
-      [name]: value ? Number(value) : (name === "lower" ? 0 : Infinity),
+      [name]: value ? Number(value) : name === "lower" ? 0 : Infinity,
     }));
   };
 
@@ -171,6 +165,19 @@ const Main = ({ filteredProducts, setQuery }) => {
           placeholder="Upper bound"
           onChange={handlePriceRangeChange}
         />
+      </div>
+
+      <div className="mt-4">
+        <label htmlFor="items-per-page">Items per page: </label>
+        <select
+          id="items-per-page"
+          onChange={(e) => handleItemsPerPageChange(e.target.value)}
+          value={itemsPerPage}
+        >
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
       </div>
       <div className="product-cards">
         {paginatedProducts.map((product) => (
